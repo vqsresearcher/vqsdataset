@@ -12,7 +12,7 @@ It computes the metrics reported in the paper:
 - **Rec** — Recovery (% of accurately tracked GT frames)
 - **t-IoU** / **st-IoU** — Mean temporal and spatio-temporal IoU
 
-> **Model code:** inference / training code for our method is **not included** in this release. The model weights and inference scripts will be published **after the paper is accepted**.
+> **Model code (coming soon):** inference and training code for our method is **not included yet**. Model weights and inference scripts will be added to this repository **soon**.
 
 What is included here:
 
@@ -49,7 +49,7 @@ What is included here:
 ```mermaid
 flowchart TD
     A[Test split video list] --> B[Load test images + query mask]
-    B --> C[Model inference - released after paper]
+    B --> C[Model inference - coming soon]
     C --> D[Predicted mask PNGs per video]
     E[Ground-truth test masks] --> F[Metric evaluation - this repo]
     D --> F
@@ -107,7 +107,7 @@ Use the GT mask folder that matches your experimental setup. For our main result
 
 ---
 
-## Step 2 — Model inference (not included; released after paper)
+## Step 2 — Model inference (coming soon)
 
 Our method takes the **test split** as input and writes **predicted binary masks** in the same folder layout as GT.
 
@@ -158,7 +158,7 @@ Our inference follows a **segment-wise visual query segmentation** protocol:
 
 ### Hardware (for reference)
 
-Inference in our experiments uses CUDA GPUs with a SAM2-based architecture. Exact configs, checkpoints, and scripts will be released with the model after publication.
+Inference in our experiments uses CUDA GPUs with a SAM2-based architecture. Exact configs, checkpoints, and scripts will be released **soon** in this repository.
 
 ---
 
